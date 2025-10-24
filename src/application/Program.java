@@ -21,7 +21,7 @@ public class Program {
 		System.out.printf("Now inform the AccountNumber: ");
 		Integer accountNumber = sc.nextInt();
 		LocalDateTime accountCreationTime = LocalDateTime.now();
-		BankAccount account = new BankAccount(accountHolder, accountNumber, accountCreationTime);
+		BankAccount bankAccount = new BankAccount(accountHolder, accountNumber, accountCreationTime);
 		boolean successfulOperation = true;
 		double value = 0.0;
 		
@@ -29,11 +29,11 @@ public class Program {
 		System.out.printf("%nLet's make your first deposit%n");
 		System.out.print("Please inform the value of the deposit: ");
 		value = sc.nextDouble();
-		successfulOperation = account.deposit(value);
+		successfulOperation = bankAccount.deposit(value);
 		while (!successfulOperation) {
 			System.out.print("Please inform a valid value of the deposit: ");
 			value = sc.nextDouble();
-			successfulOperation = account.deposit(value);
+			successfulOperation = bankAccount.deposit(value);
 		}
 
 		
@@ -52,32 +52,32 @@ public class Program {
 
 				System.out.printf("%nPlease inform the value of the deposit: ");
 				value = sc.nextDouble();
-				successfulOperation = account.deposit(value);
+				successfulOperation = bankAccount.deposit(value);
 				while (!successfulOperation) {
 					System.out.print("Please inform a valid value of the deposit: ");
 					value = sc.nextDouble();
-					successfulOperation = account.deposit(value);
+					successfulOperation = bankAccount.deposit(value);
 				}
 
-				System.out.printf("Your actual balance is %.2f%n", account.getAccountBalance());
+				System.out.printf("Your actual balance is %.2f%n", bankAccount.getAccountBalance());
 
 			}
 
 			else {
 				System.out.printf("%nPlease inform the value of the withdraw: ");
 				value = sc.nextDouble();
-				successfulOperation = account.withdraw(value);
+				successfulOperation = bankAccount.withdraw(value);
 				sc.nextLine();
 				while (!successfulOperation) {
 					System.out.println("Not enough balance or invalid value");
-					System.out.printf("Your actual balance is %.2f%n", account.getAccountBalance());
+					System.out.printf("Your actual balance is %.2f%n", bankAccount.getAccountBalance());
 					System.out.print("Please inform a valid value of the withdraw: ");
 					value = sc.nextDouble();
-					successfulOperation = account.withdraw(value);
+					successfulOperation = bankAccount.withdraw(value);
 					sc.nextLine();
 				}
 
-				System.out.printf("Your actual balance is %.2f%n", account.getAccountBalance());
+				System.out.printf("Your actual balance is %.2f%n", bankAccount.getAccountBalance());
 			}
 
 			System.out.printf("%nDo you want to make another operation? type(yes/no)");
@@ -89,7 +89,7 @@ public class Program {
 		}
 
 		System.out.println();
-		System.out.println("Your final account data: \n" + account);
+		System.out.println("Your final account data: \n" + bankAccount);
 		System.out.println("\nThank you for choosing our Bank!");
 		sc.close();
 	}
