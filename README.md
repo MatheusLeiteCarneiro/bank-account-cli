@@ -1,6 +1,7 @@
 # Bank Account CLI 🏦
 
-**Description:** `A bank account simulation CLI in Java, demonstrating encapsulation and secure transactional logic.`
+**Description:** 
+`A bank account simulation CLI in Java, demonstrating encapsulation and secure transactional logic.`
 
 This project is a command-line application that simulates the basic operations of a bank account. It was developed as a foundational exercise to implement and understand core Object-Oriented Programming (OOP) principles.
 
@@ -38,7 +39,7 @@ This project was fundamental for practicing the following concepts:
     * **Constructors:** Using a constructor to ensure a new account is created with all its necessary data.
 * **Controlling Program Flow:**
     * Using **`boolean` return types** on methods (`deposit()`, `withdraw()`) to report the success or failure of an operation.
-    * Using this `boolean` return to control a `while` loop in the `Program` class, forcing the user to re-enter a valid amount (e.g., `while (!operationWasSuccessful)`).
+    * Using this `boolean` return to control a `while` loop in the `Program` class, forcing the user to re-enter a valid amount.
 * **Java APIs:**
     * Using `LocalDateTime` to store a precise timestamp.
     * Using `DateTimeFormatter` to format the date and time neatly in the final `toString()` output.
