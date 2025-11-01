@@ -24,7 +24,7 @@ The system allows the user to:
 
 ## 🛠️ Technologies Used
 
-* **Java 17** (or your version)
+* **Java 25** 
 * **Eclipse IDE**
 * **Git & GitHub** for version control.
 
@@ -35,7 +35,7 @@ The system allows the user to:
 This project was fundamental for practicing the following concepts:
 
 * **Object-Oriented Programming (OOP):**
-    * **Encapsulation:** This was the core concept. The `accountBalance` is `private`, and all logic for changing it (`deposit`, `withdraw`) is contained *within* the `BankAccount` class. The `Program` class cannot (and does not) change the balance directly.
+    * **Encapsulation:** This was the core concept. The `accountBalance` is `private`, and all logic for changing it (`deposit`, `withdraw`) is contained *within* the `BankAccount` class. The `Program` class cannot change the balance directly.
     * **Constructors:** Using a constructor to ensure a new account is created with all its necessary data.
 * **Controlling Program Flow:**
     * Using **`boolean` return types** on methods (`deposit()`, `withdraw()`) to report the success or failure of an operation.
@@ -50,11 +50,16 @@ This project was fundamental for practicing the following concepts:
 
 ## 🏁 How to Run
 
-1.  Clone this repository:
+1.  Open your **Terminal** (or `Git Bash` on Windows).
+2.  Navigate to the directory (folder) where you want to save the project.
+3.  **Copy and paste** the following command into your terminal and press **Enter**:
+
     ```bash
     git clone https://github.com/MatheusLeiteCarneiro/bank-account-cli.git
     ```
-2.  Open the project in your Java IDE .
+    *(This will create a new folder named `bank-account-cli` with all the project files.)*
+ 
+3. Open the project in your Java IDE.
 3.  Locate and run the `Program.java` file (under `src/application/Program.java`).
 
 ---
